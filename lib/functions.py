@@ -16,4 +16,8 @@ def add(num1, num2):
 print(add(9,7))
 
 def halve(number):
-    pass
+    if not isinstance (number, (int,float)):
+        return None
+    return number/2
+
+print(halve(23))
